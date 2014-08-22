@@ -80,7 +80,7 @@ console.log(chalk.green('Hello %s'), name);
 
 Example: `chalk.red.bold.underline('Hello', 'world');`
 
-Chain [styles](#styles) and call the last one as a method with a string argument. Order doesn't matter.
+Chain [styles](#styles) and call the last one as a method with a string argument. Order doesn't matter, and later application takes precedence in case of conflict (meaning `chalk.green.yellow` and `chalk.yellow` are equivalent).
 
 Multiple arguments will be separated by space.
 
